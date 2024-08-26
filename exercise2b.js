@@ -1,4 +1,8 @@
 function romanNumeralEncoder(number) {
+    // add early returns
+    if (number < 1 || number > 4000) throw new Error("Number not allowed");
+
+
     const romanNumerals = [
         { value: 1000, symbol: 'M' },
         { value: 900, symbol: 'CM' },
